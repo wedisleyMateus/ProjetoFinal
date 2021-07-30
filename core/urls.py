@@ -24,7 +24,7 @@ from .views import (home,
 
 
 urlpatterns = [
-    path(r'', home, name='core_home'),
+    path(r'/', home, name='core_home'),
     path(r'pessoas/', lista_pessoas, name='core_lista_pessoas'),
     path(r'pessoa_novo/', pessoa_novo, name='core_pessoa_novo'),
     re_path(r'pessoa_update/(?P<id>\d+)/', pessoa_update, name='core_pessoa_update'),
