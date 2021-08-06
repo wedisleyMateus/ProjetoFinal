@@ -1,5 +1,76 @@
 {% extends "website/base.html" %}
+{% load static %}
 
 {% block main%}
-	<h1>Seja bem vindo ao web site</h1>
+	<div class="row">
+		<div class="col-6">
+			<h1>Estacionamento 24 Horas</h1>
+			<span>Slogan da sua impresa aqui</span>
+		</div>
+		<div class="col-6">
+			<img src="{% static 'img/logo.jpg' %}" alt="Estacionamento 24 Horas">
+		</div>
+	</div>
+
+	{% include "website/menu.html" %}
+
+	<div class="row row-space">
+		<div class="col-6">
+			As pessoas humildes são as mais fortes, porque elas sabem que ainda precisam aprender muito,
+			lutar muito, estudar muito, suar muito para conseguir alcançar o que desejam.
+
+			O humilde não se vangloria quando conquista uma vitória, pois ele sabe que fazer isso 
+			é deixar a porta aberta para a inveja e para o fracasso.
+
+			Viver de forma humilde é a maneira mais sábia de todas, porque a humildade nos ensina a 
+			aceitar os altos e baixos da vida, e que na realidade, apesar de todas as diferenças, 
+			ninguém é melhor do que ninguém.
+		</div>
+		<div class="col-6">
+			A fé é o que mantém o ser humano firme mesmo nas circunstâncias mais negativas. 
+			É acreditar que melhores dias virão, mesmo quando a vida não apresenta motivos para sorrir.
+
+			Ter fé é andar confiante mesmo na escuridão, é ser grato pelas coisas boas antes de 
+			recebê-las. É ver o abismo e dar um passo em frente, confiando que você não irá cair.
+
+			Viver com fé pode ter um impacto essencial na sua vida, sendo um abrigo forte nos piores 
+			dias de tribulação.
+		</div>
+	</div>
+	<div class="row row-space">
+		<div class="col-4">
+			Se você encontrar um caminho sem obstáculos, ele provavelmente não leva a lugar nenhum.
+		</div>
+		<div class="col-4">
+			<img src="{% static 'img/logo.jpg' %}">
+		</div>
+		<div class="col-4">
+			Cada escolha, uma oportunidade. Cada queda, um aprendizado. Cada atitude, uma consequência.
+		</div>
+	</div>
+	<div class="row row-space">
+		<div class="col-6">
+			As pessoas humildes são as mais fortes, porque elas sabem que ainda precisam aprender muito,
+			lutar muito, estudar muito, suar muito para conseguir alcançar o que desejam.
+
+			O humilde não se vangloria quando conquista uma vitória, pois ele sabe que fazer isso 
+			é deixar a porta aberta para a inveja e para o fracasso.
+
+			Viver de forma humilde é a maneira mais sábia de todas, porque a humildade nos ensina a 
+			aceitar os altos e baixos da vida, e que na realidade, apesar de todas as diferenças, 
+			ninguém é melhor do que ninguém.
+		</div>
+		<div class="col-6">
+			A fé é o que mantém o ser humano firme mesmo nas circunstâncias mais negativas. 
+			É acreditar que melhores dias virão, mesmo quando a vida não apresenta motivos para sorrir.
+
+			Ter fé é andar confiante mesmo na escuridão, é ser grato pelas coisas boas antes de 
+			recebê-las. É ver o abismo e dar um passo em frente, confiando que você não irá cair.
+
+			Viver com fé pode ter um impacto essencial na sua vida, sendo um abrigo forte nos piores 
+			dias de tribulação.
+		</div>
+	</div>
+
+	{% include "website/footer.html" %}
 {% endblock%}
